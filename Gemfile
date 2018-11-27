@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 gem 'devise'
 
 

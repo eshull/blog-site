@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<div class="header">
+  <div class="show-details">
+    <h1 class="title">
+      <%= @post.title %>
+    </h1>
+
+    <p class="description">
+      <%= @post.content %>
+    </p>
+
+    <h3>
+      <strong>Category:</strong>
+      <%= @post.category %> 
+    </h3>
+
+  </div>
+</div>
+
+
+
+
+<% if @post.large_pic %>
+  <div class="large-image">
+    <%= image_tag( @post.large_pic, :alt => @post.title, :class => "img-fluid") %>
+  </div>
+<% end %>
+
+<% if @post.large_pic_two %>
+  <div class="large-image">
+    <%= image_tag( @post.large_pic_two, :alt => @post.title, :class => "img-fluid") %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

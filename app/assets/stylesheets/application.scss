@@ -10,8 +10,143 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-
+ *= require_tree .
  *= require_self
-//= require_tree .
  */
- @import "bootstrap";
+@import "bootstrap";
+
+$font-post:  gineso, sans-serif, italic;
+
+body {
+  // background: #1f2023;
+  background-image: linear-gradient(110deg, #1f2023, #101115, black);
+}
+
+a {
+  color: #333bb7;
+}
+a:visited {
+  color: #333bb7;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  background: #101115;
+  color: white;
+  font-family: gineso, sans-serif;
+  border: solid 1px white;
+  height: 80px;
+  width: 120px;
+}
+
+img {
+  width: 100%;
+}
+
+ .small {
+   margin-top: -29px;
+ }
+
+ .brand {
+   margin-top: 6px;
+ }
+
+.nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #101115;
+  color: white;
+  font-family: gineso, sans-serif;
+  // border: solid 2px #666666;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 20px 20px 50px black;
+  justify-content: flex-start;
+  width: 14%;
+  padding: 18px;
+}
+
+.navbar-text {
+  margin-left: 35px;
+}
+
+.title {
+  font-family: $font-post;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 60px;
+  // margin-top: $info-margin;
+  margin-bottom: 30px;
+}
+
+.description {
+  line-height: 29px;
+  font-size: 25px;
+}
+
+.footer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: #101115;
+  width: 100%;
+  color: #666666;
+}
+
+@media (max-width: 2000px) {
+  .nav {
+    width: 98%;
+    height: 100px;
+    flex-direction: row;
+    padding: 0px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+
+  .nav-image {
+    width: 80px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-image {
+    display: none;
+  }
+  .navbar-text h2 {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .small {
+    margin-top: -20px;
+  }
+
+  .nav {
+    height: 80px;
+    width: 93%;
+  }
+
+  .col-md-10 {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .dev_header h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navbar-text {
+    margin-left: 20px;
+  }
+}

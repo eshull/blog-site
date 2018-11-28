@@ -13,9 +13,64 @@
  *= require_tree .
  *= require_self
  */
+//
+//  Brandon Grotesque Regular
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 400;
+//
+// font-style: normal;
+//
+// Brandon Grotesque Regular Italic
+//
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 400;
+//
+// font-style: italic;
+//
+// Brandon Grotesque Bold
+//
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 700;
+//
+// font-style: normal;
+//
+// Brandon Grotesque Bold Italic
+//
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 700;
+//
+// font-style: italic;
+//
+// Brandon Grotesque Black
+//
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 900;
+//
+// font-style: normal;
+//
+// Brandon Grotesque Black Italic
+//
+//
+// font-family: brandon-grotesque, sans-serif;
+//
+// font-weight: 900;
+//
+// font-style: italic;
+
+
 @import "bootstrap";
 
-$font-post:  gineso, sans-serif, italic;
+$font-post: brandon-grotesque, sans-serif;
 
 body {
   // background: #1f2023;
@@ -41,12 +96,16 @@ button {
   width: 120px;
 }
 
+.row {
+  align-items: center;
+}
+
 img {
   width: 100%;
 }
 
  .small {
-   margin-top: -29px;
+   margin-top: -19px;
  }
 
  .brand {
@@ -62,15 +121,16 @@ img {
   margin-right: 10px;
   background: #101115;
   color: white;
-  font-family: gineso, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   // border: solid 2px #666666;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-shadow: 20px 20px 50px black;
   justify-content: flex-start;
   width: 14%;
   padding: 18px;
+  align-items: center;
 }
 
 .navbar-text {
@@ -114,7 +174,6 @@ img {
 
   .nav-image {
     width: 80px;
-    margin-top: 10px;
   }
 }
 
@@ -128,17 +187,12 @@ img {
   }
 
   .small {
-    margin-top: -20px;
+    margin-top: -19px;
   }
 
   .nav {
     height: 80px;
     width: 93%;
-  }
-
-  .col-md-10 {
-    width: 100%;
-    margin-left: 20px;
   }
 
   .dev_header h2 {

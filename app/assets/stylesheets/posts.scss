@@ -5,7 +5,7 @@
 
 @import "bootstrap";
 
-$font-post:  gineso, sans-serif;
+$font-post: brandon-grotesque, sans-serif;
 $btn-background: #101115;
 $box-shadow: 20px 20px 50px black;
 $info-margin: 10px;
@@ -30,7 +30,6 @@ $info-margin: 10px;
   color: white;
   width: 60%;
   box-shadow: $box-shadow;
-  margin-right: 55px;
 }
 
 .skill_header {
@@ -60,16 +59,17 @@ $info-margin: 10px;
 }
 
 .header h2 {
+  margin-top: 9px;
   font-size: 40px;
   font-family: $font-post;
   font-weight: 300;
   letter-spacing: 2px;
-  margin-bottom: 16px;
   color: #666666;
   font-weight: 700;
 }
 
 .post {
+  font-style: italic;
   display: flex;
   flex-direction: row;
   font-family: $font-post;
@@ -107,8 +107,6 @@ $info-margin: 10px;
   width: 100%
 }
 
-
-
 .author {
   font-family: $font-post;
   font-style: italic;
@@ -137,7 +135,7 @@ $info-margin: 10px;
 
 .content {
   font-size: 21px;
-  font-family: serif;
+  font-family: sans-serif;
   margin-top: $info-margin;
   line-height: 23px;
 }
@@ -180,12 +178,6 @@ $info-margin: 10px;
     font-size: 30px;
   }
 
-  .col-md-10 {
-    width: 100%;
-    margin-left: 100px;
-  }
-
-
  }
 
 @media (max-width: 1400px) {
@@ -204,17 +196,8 @@ $info-margin: 10px;
     align-items: center;
   }
   .des_header {
-    margin-left: 0px;
     width: 50%;
     margin-top: 25px;
-  }
-  .dev_header {
-    width: 70%;
-  }
-
-  .col-md-10 {
-    width: 100%;
-    margin-left: 30px;
   }
 
 }

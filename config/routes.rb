@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :skills
   root 'posts#index'
 
   devise_for :users

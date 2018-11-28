@@ -1,5 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :user
 
   def self.sort_by(sort_value)
   if sort_value == 'Design'
